@@ -2,7 +2,23 @@ import '../css/footer.css';
 
 function Footer() {
     return (
-        <h1>Footer</h1>
+        <footer className='footer'>
+            <div className='footer-container'>
+                
+                <div className='footer-left'>
+                    <p>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</p>
+                </div>
+
+                <div className='footer-right'>
+                    <div className='logo-container'>
+                        <a href='/' className='logo'>
+                            <img src='/logo.png' alt="Logo" />
+                        </a>
+                    </div>
+                </div>  
+
+            </div>
+        </footer>
     );
 }
 
