@@ -3,9 +3,12 @@ import '../css/navbar.css';
 function NavBar() {
     return (
         <nav className='navbar'>
-            <a href='/' className='logo'>
-                <img src='/logo.png' alt="Logo" />
-            </a>
+            <div className='logo-container'>
+                <a href='/' className='logo'>
+                    <img src='/logo.png' alt="Logo" />
+                </a>
+            </div>
+
             <div className='navbar-container'>
                 <ul className='nav-options'>
                     <li><a href='/capabilities'>Capabilities</a></li>
