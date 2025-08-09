@@ -1,4 +1,4 @@
-import '../css/flavors.css';
+import './flavors.css';
 
 function Flavors() {
     return (

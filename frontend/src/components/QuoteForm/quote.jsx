@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/quote.css';
+import './quote.css';
 
 function QuoteForm() {
     const [formData, setFormData] = useState({

@@ -1,7 +1,15 @@
 :root {
-  --nlu-blue: #003C71;
-  --nlu-lighter-blue: #00529B;
-  --nlu-gold: #FFD100;
+  --nlu-navy-blue: #005A96;
+  --nlu-dark-blue: #0072CE;
+  --nlu-medium-blue: #009ADA;
+  --nlu-light-blue: #87D4ED;
+
+  --nlu-dark-grey: #67747E;
+  --nlu-medium-grey: #A2AAAD;
+  --nlu-light-grey: #DDE0E3;
+
+  --nlu-electric-yellow: #E2E11B;
+  
   --text-color: #213547;
   --max-width: 1200px;
 

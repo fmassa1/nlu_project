@@ -1,6 +1,6 @@
 .footer {
     color: white;
-    background-color: var(--nlu-blue);
+    background-color: var(--nlu-navy-blue);
     backdrop-filter: blur(20px);
     padding: 2rem 0;
     width: 100%;                   

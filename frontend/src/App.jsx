@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 
 
-import Navbar from './components/navbar';
-import Footer from './components/footer';
+import Navbar from './components/NavBar/navbar';
+import Footer from './components/Footer/footer';
 
-import HomePage from './pages/home';
-import Flavors from './pages/flavors';
-import NotFound from './pages/404'
+import HomePage from './pages/Home/home';
+import Flavors from './pages/Flavors/flavors';
+import NotFound from './pages/NotFound/404'
 
-import './App.css'
+import './css/App.css'
 
 
 function App() {
