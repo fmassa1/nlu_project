@@ -1,6 +1,6 @@
 .footer {
-    color: black;
-    background-color: rgb(198, 198, 198);
+    color: white;
+    background-color: var(--nlu-blue);
     backdrop-filter: blur(20px);
     padding: 2rem 0;
     width: 100%;                   
