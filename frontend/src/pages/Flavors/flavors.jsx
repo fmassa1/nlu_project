@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 import QuoteForm from '../../components/QuoteForm/quote';
 import { getCategories } from "../../utils/flavors";
 import './flavors.css';
 
 function Flavors() {
+    const navigate = useNavigate();
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
@@ -22,8 +23,8 @@ function Flavors() {
                         <div className='flavor-card' key={category.slug}>
                             <img src={`https://placehold.co/400`} alt={category.name} />
                             <h2>{category.name}</h2>
-                            <button>
-                                <Link to={`/flavors/${category.slug}`}>View Flavors</Link>
+                            <button onClick={() => navigate(`/flavors/${category.slug}`)}>
+                                View Flavors
                             </button>
                         </div>
                     ))}
