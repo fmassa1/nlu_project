@@ -21,6 +21,10 @@ function FlavorCategoryPage() {
     return (
         <div className="main-content-wrapper" style={{ display: 'flex', gap: '2rem' }}>
             <div className="content-left">
+                <Link to="/flavors" className="back-arrow-button">
+                    <span style={{ marginRight: '0.5rem', fontSize: '1.2rem' }}>←</span>
+                    Back to Categories
+                </Link>
                 <h1>{flavors[0].category}</h1>
                 <div className="flavor-list">
                     {flavors.map(f => (

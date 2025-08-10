@@ -26,9 +26,9 @@ function NavBar() {
                             Capabilities <span className="dropdown-arrow">▼</span> 
                         </span>
                         <ul className="dropdown-menu">
-                            <li><Link to="/capabilities/design">Design</Link></li>
-                            <li><Link to="/capabilities/production">Production</Link></li>
-                            <li><Link to="/capabilities/certification">Certification</Link></li>
+                            <li><Link to="/design">Design</Link></li>
+                            <li><Link to="/production">Production</Link></li>
+                            <li><Link to="/certification">Certification</Link></li>
                         </ul>
                     </li>
 

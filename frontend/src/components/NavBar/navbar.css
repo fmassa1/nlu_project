@@ -43,22 +43,41 @@
     font-weight: 500;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     padding-bottom: 2px;
+    cursor: pointer;
 }
 
 .dropdown-menu {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: var(--nlu-off-white);
-    border: 1px solid var(--nlu-light-grey);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    min-width: 180px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+
+    min-width: 200px;
     z-index: 1000;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-10px);
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 0s linear 0.3s, 
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
 }
 
 .dropdown-menu li {
+    font-size: 16px;
     padding: 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
 }
 
 .dropdown-menu li a {
@@ -69,15 +88,48 @@
     white-space: nowrap;
 }
 
+.dropdown-menu li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--nlu-light-blue), var(--nlu-off-white));
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.dropdown-menu li a:hover::before {
+    left: 0;
+}
+
 .dropdown-menu li a:hover {
-    background-color: var(--nlu-light-blue);
     color: var(--nlu-navy-blue);
     border-bottom: none;
+    transform: translateX(8px);
+
     
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 0s linear 0s, 
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+}
+
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    right: -20px;
+    height: 16px;
+    z-index: 999;
 }
 
 .dropdown-label:hover, .nav-options a:hover {
@@ -87,8 +139,17 @@
 
 .dropdown-arrow {
     font-size: 0.6em;
-    margin-left: 0.3rem;
-    transition: transform 0.3s ease;
+    margin-left: 0.5rem;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown:hover .dropdown-label {
+    text-shadow: 0 0 8px rgba(255, 235, 59, 0.3);
 }
 
 
