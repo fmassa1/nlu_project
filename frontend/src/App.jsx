@@ -21,11 +21,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/capabilities" element={<h1>Capabilities</h1>} />
         <Route path="/flavors" element={<Flavors />} />
         <Route path="/flavors/:categorySlug" element={<FlavorCategoryPage />} />
-
-        <Route path="/contact" element={<h1>contact</h1>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
