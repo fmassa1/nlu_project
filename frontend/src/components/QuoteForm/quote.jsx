@@ -54,8 +54,8 @@ function QuoteForm() {
                 <select name='capability' value={formData.capability} onChange={handleChange} required>
                     <option value=''>-- Select a capability --</option>
                     <option value='Design'>Design</option>
-                    <option value='Marketing'>Marketing</option>
-                    <option value='Consulting'>Consulting</option>
+                    <option value='Production'>Production</option>
+                    <option value='Certification'>Certification</option>
                 </select>
 
                 <label>Comments:</label>

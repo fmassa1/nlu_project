@@ -14,11 +14,11 @@ function Slider() {
         },
         {
             image: '/slider/homepage-hero-resized.jpg',
-            link: '/marketing'
+            link: '/production'
         },
         {
             image: '/slider/NLU-Application-Photos-02.jpg',
-            link: '/consulting'
+            link: '/certification'
         }
       ];
 
