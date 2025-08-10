@@ -37,7 +37,7 @@
     list-style: none;
 }
 
-.nav-options a {
+.dropdown-label, .nav-options a {
     text-decoration: none;
     color: var(--nlu-off-white);
     font-weight: 500;
@@ -80,12 +80,16 @@
     display: block;
 }
 
-.nav-options a:hover {
+.dropdown-label:hover, .nav-options a:hover {
     color: var(--nlu-electric-yellow); 
     border-bottom: 2px solid var(--nlu-electric-yellow);
 }
 
-
+.dropdown-arrow {
+    font-size: 0.6em;
+    margin-left: 0.3rem;
+    transition: transform 0.3s ease;
+}
 
 
 @media (max-width: 768px) {

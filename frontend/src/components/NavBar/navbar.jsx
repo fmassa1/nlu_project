@@ -22,7 +22,9 @@ function NavBar() {
             <div className='navbar-container'>
                 <ul className='nav-options'>
                     <li className="dropdown">
-                        <span>Capabilities</span>
+                        <span className="dropdown-label">
+                            Capabilities <span className="dropdown-arrow">▼</span> 
+                        </span>
                         <ul className="dropdown-menu">
                             <li><Link to="/capabilities/design">Design</Link></li>
                             <li><Link to="/capabilities/production">Production</Link></li>
@@ -31,7 +33,9 @@ function NavBar() {
                     </li>
 
                     <li className="dropdown">
-                        <Link to="/flavors">Flavors</Link>
+                        <Link to="/flavors" className="dropdown-label">Flavors
+                            <span className="dropdown-arrow">▼</span> 
+                        </Link>
                         <ul className="dropdown-menu">
                             {flavorCategories.map(cat => (
                                 <li key={cat.slug}>
