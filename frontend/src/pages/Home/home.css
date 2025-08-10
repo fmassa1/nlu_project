@@ -1,11 +1,11 @@
-h1 {
+.content-left h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--nlu-navy-blue);
   }
 
-p {
+.content-left p {
     font-size: 1.125rem; 
     line-height: 1.6;
     color: var(--nlu-navy-blue);

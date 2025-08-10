@@ -8,6 +8,9 @@
   --nlu-medium-grey: #A2AAAD;
   --nlu-light-grey: #DDE0E3;
 
+  --nlu-off-white: #F5F5F5;
+
+
   --nlu-electric-yellow: #E2E11B;
   
   --text-color: #213547;
@@ -25,23 +28,23 @@
 
 html, body {
   font-family: var(--font-base);
-  background-color: #ffffff;
+  background-color: var(--nlu-off-white);
   color: var(--text-color);
   line-height: 1.5;
   min-height: 100vh;
 }
 
 a {
-  color: var(--nlu-blue);
+  color: var(--nlu-navy-blue);
   text-decoration: none;
 }
 a:hover {
-  color: var(--nlu-gold);
+  color: var(--nlu-electric-yellow);
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: bold;
-  color: var(--nlu-blue);
+  color: var(--nlu-navy-blue);
 }
 
 button {
@@ -50,14 +53,14 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1rem;
   font-weight: 500;
-  background-color: var(--nlu-blue);
+  background-color: var(--nlu-navy-blue);
   color: white;
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
 button:hover {
-  background-color: var(--nlu-gold);
-  color: var(--nlu-blue);
+  background-color: var(--nlu-electric-yellow);
+  color: var(--nlu-navy-blue);
 }
 
 .container {
@@ -91,7 +94,7 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .main-content-wrapper {
     flex-direction: column;
   }

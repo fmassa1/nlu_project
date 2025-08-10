@@ -35,7 +35,7 @@ function Slider() {
     return (
         <div className="slider">
             <img src={slides[currentIndex]} 
-            alt={'Slide ${currentIndex + 1}'} 
+            alt={'Error grabbing image'} 
             className="slider-image" 
             onClick={() =>handleSlideClick(currentIndex)}
             style={{ cursor: 'pointer' }}

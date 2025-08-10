@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
-    background-color: white; 
-    color: white;
+    background-color: var(--nlu-off-white); 
+    color: var(--nlu-off-white);
     padding: 1rem 0;
 }
 
@@ -37,7 +37,7 @@
 
 .nav-options a {
     text-decoration: none;
-    color: white;
+    color: var(--nlu-off-white);
     font-weight: 500;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     padding-bottom: 2px;

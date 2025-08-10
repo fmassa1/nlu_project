@@ -7,9 +7,10 @@ import Footer from './components/Footer/footer';
 
 import HomePage from './pages/Home/home';
 import Flavors from './pages/Flavors/flavors';
+import FlavorCategoryPage from './pages/FlavorCategoryPage/flavorpage';
 import NotFound from './pages/NotFound/404'
 
-import './css/App.css'
+import './styles/App.css'
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/capabilities" element={<h1>Capabilities</h1>} />
         <Route path="/flavors" element={<Flavors />} />
+        <Route path="/flavors/:categorySlug" element={<FlavorCategoryPage />} />
+
         <Route path="/contact" element={<h1>contact</h1>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
