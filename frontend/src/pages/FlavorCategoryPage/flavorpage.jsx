@@ -3,6 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import { getFlavorsByCategory } from "../../utils/flavors";
 import QuoteForm from '../../components/QuoteForm/quote';
 
+import './flavorpage.css';
+
 
 function FlavorCategoryPage() {
     const { categorySlug } = useParams();
@@ -20,12 +22,16 @@ function FlavorCategoryPage() {
         <div className="main-content-wrapper" style={{ display: 'flex', gap: '2rem' }}>
             <div className="content-left">
                 <h1>{flavors[0].category}</h1>
-                {flavors.map(f => (
-                    <div key={f.id}>
-                        <p>{f.flavor}</p>
-                    </div>
-                ))}
-                <Link to="/flavors">Back to Categories</Link>
+                <div className="flavor-list">
+                    {flavors.map(f => (
+                        <div key={f.id} className="flavor-item">
+                            <p className="flavor-name">{f.flavor}</p>
+                        </div>
+                    ))}
+                </div>
+                <button>
+                    <Link to="/flavors">Back to Categories</Link>
+                </button>
             </div>
             <div className="quote-container-right">
                 <QuoteForm />

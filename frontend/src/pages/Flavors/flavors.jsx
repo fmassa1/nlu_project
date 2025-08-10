@@ -22,7 +22,9 @@ function Flavors() {
                         <div className='flavor-card' key={category.slug}>
                             <img src={`https://placehold.co/400`} alt={category.name} />
                             <h2>{category.name}</h2>
-                            <Link to={`/flavors/${category.slug}`}>View Flavors</Link>
+                            <button>
+                                <Link to={`/flavors/${category.slug}`}>View Flavors</Link>
+                            </button>
                         </div>
                     ))}
                 </div>

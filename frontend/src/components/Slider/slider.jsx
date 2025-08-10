@@ -8,9 +8,18 @@ function Slider() {
     const navigate = useNavigate();
 
     const slides = [
-        '/slider/adult-degree-hero2.jpg',
-        '/slider/homepage-hero-resized.jpg',
-        '/slider/NLU-Application-Photos-02.jpg',
+        {
+            image: '/slider/adult-degree-hero2.jpg',
+            link: '/design'
+        },
+        {
+            image: '/slider/homepage-hero-resized.jpg',
+            link: '/marketing'
+        },
+        {
+            image: '/slider/NLU-Application-Photos-02.jpg',
+            link: '/consulting'
+        }
       ];
 
       const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,11 +43,11 @@ function Slider() {
 
     return (
         <div className="slider">
-            <img src={slides[currentIndex]} 
-            alt={'Error grabbing image'} 
-            className="slider-image" 
-            onClick={() =>handleSlideClick(currentIndex)}
-            style={{ cursor: 'pointer' }}
+            <img src={slides[currentIndex].image} 
+                alt={'Error grabbing image'} 
+                className="slider-image" 
+                onClick={() =>handleSlideClick(currentIndex)}
+                style={{ cursor: 'pointer' }}
             />
             <div className='dots-container'>
                 {slides.map((_, index) => (

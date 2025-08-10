@@ -34,11 +34,11 @@ html, body {
   min-height: 100vh;
 }
 
-a {
+li a {
   color: var(--nlu-navy-blue);
   text-decoration: none;
 }
-a:hover {
+li a:hover {
   color: var(--nlu-electric-yellow);
 }
 
@@ -53,14 +53,19 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1rem;
   font-weight: 500;
-  background-color: var(--nlu-navy-blue);
-  color: white;
+  background-color: var(--nlu-medium-blue);
+  color: var(--nlu-off-white);
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
+
 button:hover {
-  background-color: var(--nlu-electric-yellow);
-  color: var(--nlu-navy-blue);
+  background-color: var(--nlu-navy-blue);
+}
+
+button a {
+  color: var(--nlu-off-white);
+  text-decoration: none;
 }
 
 .container {

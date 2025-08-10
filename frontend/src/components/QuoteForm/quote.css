@@ -61,8 +61,6 @@ textarea {
 }
 
 .submit-btn {
-    background-color: var(--nlu-medium-blue); 
-    color: var(--nlu-off-white);
     font-size: 1rem;
     font-weight: bold;
     padding: 0.75rem;
@@ -71,11 +69,6 @@ textarea {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.submit-btn:hover {
-    color: var(--nlu-off-white);
-    background-color: var(--nlu-navy-blue); 
 }
 
 .confirmation-message {
