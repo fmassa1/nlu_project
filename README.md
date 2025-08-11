@@ -1,5 +1,6 @@
-# NLU Project (Front-End)
+https://massa-nlu-project.netlify.app/
 
+# NLU Project (Front-End)
 A small, responsive website built with **Node.js**, **HTML**, **CSS**, and **JavaScript** for the NLU front-end evaluation project.
 
 
@@ -13,7 +14,7 @@ A small, responsive website built with **Node.js**, **HTML**, **CSS**, and **Jav
 - **Node.js**
 - **HTML5**
 - **CSS3**
-- **Vanilla JavaScript**
+- **JavaScript**
 
 ## Setup
 1. Clone this repo:
@@ -30,3 +31,4 @@ A small, responsive website built with **Node.js**, **HTML**, **CSS**, and **Jav
    ```bash
    npm run dev
    ```
+
