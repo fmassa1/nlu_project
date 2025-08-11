@@ -15,15 +15,19 @@ function Slider() {
     const slides = [
         {
             image: '/slider/adult-degree-hero2.jpg',
-            link: '/design'
+            link: '/design',
+            label: 'Design'
         },
         {
             image: '/slider/homepage-hero-resized.jpg',
-            link: '/production'
+            link: '/production',
+            label: 'Production'
         },
         {
             image: '/slider/NLU-Application-Photos-02.jpg',
-            link: '/certification'
+            link: '/certification',
+            label: 'Certification'
+
         }
     ];
 
@@ -109,7 +113,7 @@ function Slider() {
                     <img
                         key={index}
                         src={slide.image}
-                        alt="Slide"
+                        alt={slide.label}
                         className="slider-image"
                         onClick={() => handleSlideClick(index)}
                         style={{ cursor: 'pointer' }}

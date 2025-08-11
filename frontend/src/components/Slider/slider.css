@@ -51,7 +51,7 @@
     box-shadow: 0 0 8px var(--nlu-electric-yellow);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .dots-container {
         bottom: 60px; 
     }

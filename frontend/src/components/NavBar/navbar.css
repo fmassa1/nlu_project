@@ -95,7 +95,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--nlu-light-blue), var(--nlu-off-white));
+    background: linear-gradient(135deg, var(--nlu-navy-blue), var(--nlu-off-white));
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -105,7 +105,7 @@
 }
 
 .dropdown-menu li a:hover {
-    color: var(--nlu-navy-blue);
+    color: var(--nlu-off-white);
     border-bottom: none;
     transform: translateX(8px);
 
